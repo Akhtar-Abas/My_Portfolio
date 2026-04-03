@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhtar Abbas | Data Science & AI Portfolio</title>
+    <meta name="description" content="Computer Science graduate specializing in Data Science, Machine Learning and AI. Experienced in Python, TensorFlow, NLP and Deep Learning." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#2563eb',
+              secondary: '#1e40af',
+              accent: '#3b82f6'
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50 transition-all duration-300" id="navbar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a href="#home" class="text-2xl font-bold text-primary">Akhtar Abbas</a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="#home" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">Home</a>
+              <a href="#about" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">About</a>
+              <a href="#skills" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">Skills</a>
+              <a href="#projects" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">Projects</a>
+              <a href="#testimonials" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">References</a>
+              <a href="#contact" class="nav-link px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-primary hover:bg-gray-100 transition">Contact</a>
+            </div>
+          </div>
+          <button id="mobile-menu-button" class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-primary hover:bg-gray-100 focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">Home</a>
+          <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">About</a>
+          <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">Skills</a>
+          <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">Projects</a>
+          <a href="#testimonials" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">References</a>
+          <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-blue-50 pt-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div class="animate-fade-in">
+          <div class="mb-8">
+            <div class="w-32 h-32 mx-auto bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-5xl font-bold shadow-xl">
+              AA
+            </div>
+          </div>
+          <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
+            Hi, I'm <span class="text-primary">Akhtar Abbas</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8">
+            CS Student | Data Science & AI | ML, NLP, Deep Learning
+          </p>
+          <p class="text-lg text-gray-500 max-w-2xl mx-auto mb-8">
+            Computer Science graduate with hands-on training in Data Science, Machine Learning and analytics
+          </p>
+          <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition transform hover:scale-105 shadow-lg">
+              Get In Touch
+            </a>
+            <a href="#projects" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition transform hover:scale-105 shadow-lg border-2 border-primary">
+              View Projects
+            </a>
+          </div>
+          <div class="flex justify-center gap-6">
+            <a href="https://github.com/Akhtar-Abas" target="_blank" class="text-gray-600 hover:text-primary transition transform hover:scale-110">
+              <i class="fab fa-github text-3xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/akhtar-abbas-163616241" target="_blank" class="text-gray-600 hover:text-primary transition transform hover:scale-110">
+              <i class="fab fa-linkedin text-3xl"></i>
+            </a>
+            <a href="mailto:akhtar.abbas8267@gmail.com" class="text-gray-600 hover:text-primary transition transform hover:scale-110">
+              <i class="fas fa-envelope text-3xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-4">Background & Education</h3>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              I am a Computer Science graduate with specialized training in Data Science, Machine Learning and AI. My academic journey has equipped me with strong analytical and problem-solving skills, which I apply to real-world data challenges.
+            </p>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              I have hands-on experience working with various machine learning frameworks including TensorFlow, Keras and Scikit-learn. My expertise spans across Natural Language Processing, Deep Learning and traditional ML algorithms.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+              I am passionate about leveraging data to solve complex problems and create impactful solutions. Currently based in Islamabad, I am open to relocating for the right opportunity.
+            </p>
+          </div>
+          <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg">
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Quick Facts</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <i class="fas fa-map-marker-alt text-primary mt-1 mr-3"></i>
+                <div>
+                  <span class="font-semibold text-gray-900">Location:</span>
+                  <p class="text-gray-600">Islamabad | Willing to Relocate</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-graduation-cap text-primary mt-1 mr-3"></i>
+                <div>
+                  <span class="font-semibold text-gray-900">Education:</span>
+                  <p class="text-gray-600">Bachelor's in Computer Science</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-briefcase text-primary mt-1 mr-3"></i>
+                <div>
+                  <span class="font-semibold text-gray-900">Focus Areas:</span>
+                  <p class="text-gray-600">Data Science, ML, NLP, Deep Learning</p>
+                </div>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-code text-primary mt-1 mr-3"></i>
+                <div>
+                  <span class="font-semibold text-gray-900">Primary Language:</span>
+                  <p class="text-gray-600">Python</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Skills & Technologies</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          A comprehensive overview of my technical expertise and the tools I work with
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Programming Languages -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-code text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Programming</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Python (Advanced)
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> SQL
+              </li>
+            </ul>
+          </div>
+
+          <!-- Machine Learning -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-brain text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Machine Learning</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Scikit-learn
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> ML Algorithms
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Model Training
+              </li>
+            </ul>
+          </div>
+
+          <!-- Deep Learning -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-project-diagram text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Deep Learning</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> TensorFlow
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Keras
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Neural Networks
+              </li>
+            </ul>
+          </div>
+
+          <!-- NLP -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-language text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">NLP</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Natural Language Processing
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> mBART
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Neural Machine Translation
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> LLM Concepts
+              </li>
+            </ul>
+          </div>
+
+          <!-- Data Analysis -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-chart-line text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Data Analysis</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Pandas
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> NumPy
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> EDA
+              </li>
+            </ul>
+          </div>
+
+          <!-- Data Visualization -->
+          <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                <i class="fas fa-chart-bar text-xl"></i>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900">Visualization</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Data Visualization
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Matplotlib
+              </li>
+              <li class="flex items-center text-gray-600">
+                <i class="fas fa-check text-primary mr-2"></i> Seaborn
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Projects</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          A showcase of my data science and machine learning projects
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Sentiment Analysis -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-smile text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">NLP</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Sentiment Analysis</h3>
+            <p class="text-gray-600 mb-4">
+              Built a sentiment analysis model to classify text data and extract emotional insights using NLP techniques and machine learning algorithms.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">NLP</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Scikit-learn</span>
+            </div>
+          </div>
+
+          <!-- Movie Recommendation -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-film text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">ML</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Movie Recommendation System</h3>
+            <p class="text-gray-600 mb-4">
+              Developed a recommendation engine using collaborative filtering and content-based filtering to suggest personalized movie recommendations.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Pandas</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">ML</span>
+            </div>
+          </div>
+
+          <!-- Heart Disease Prediction -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-heartbeat text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">ML</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Heart Disease Prediction</h3>
+            <p class="text-gray-600 mb-4">
+              Created a predictive model to assess heart disease risk using patient data and various machine learning classification algorithms.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Scikit-learn</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Classification</span>
+            </div>
+          </div>
+
+          <!-- Titanic Survival -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-ship text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">ML</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">Titanic Survival Prediction</h3>
+            <p class="text-gray-600 mb-4">
+              Analyzed the Titanic dataset and built classification models to predict passenger survival based on various features and demographics.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">EDA</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Pandas</span>
+            </div>
+          </div>
+
+          <!-- World Population Analysis -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-globe text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">Data Analysis</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">World Population Analysis</h3>
+            <p class="text-gray-600 mb-4">
+              Performed comprehensive analysis of global population trends, demographic shifts and regional patterns using data visualization.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Pandas</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Visualization</span>
+            </div>
+          </div>
+
+          <!-- CO₂ Analysis -->
+          <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-2">
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white">
+                <i class="fas fa-cloud text-xl"></i>
+              </div>
+              <span class="text-xs font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">Data Analysis</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">CO₂ Emissions Analysis</h3>
+            <p class="text-gray-600 mb-4">
+              Analyzed global CO₂ emission patterns, identified key contributors and visualized environmental trends over time.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">NumPy</span>
+              <span class="text-xs bg-gray-200 text-gray-700 px-2 py-1 rounded">EDA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a href="https://github.com/Akhtar-Abas" target="_blank" class="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition transform hover:scale-105 shadow-lg">
+            <i class="fab fa-github mr-2"></i> View All Projects on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials/References Section -->
+    <section id="testimonials" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">References</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          Academic and professional references available upon request
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Reference 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                SA
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900">Sir Sajid Ali</h3>
+                <p class="text-gray-600">Instructor, NUST</p>
+              </div>
+            </div>
+            <div class="border-t pt-4 mt-4">
+              <p class="text-sm text-gray-600 mb-2">
+                <i class="fas fa-envelope text-primary mr-2"></i>
+                <a href="mailto:sajid.ra@seecs.edu.pk" class="hover:text-primary transition">sajid.ra@seecs.edu.pk</a>
+              </p>
+              <p class="text-sm text-gray-600">
+                <i class="fas fa-phone text-primary mr-2"></i>
+                <a href="tel:+923485504200" class="hover:text-primary transition">+92 348 5504200</a>
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Selected for Inspection
+              </span>
+            </div>
+          </div>
+
+          <!-- Reference 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition">
+            <div class="flex items-center mb-4">
+              <div class="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mr-4">
+                HB
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-gray-900">Hasin Bano</h3>
+                <p class="text-gray-600">Supervisor, UOBS</p>
+              </div>
+            </div>
+            <div class="border-t pt-4 mt-4">
+              <p class="text-sm text-gray-600 mb-2">
+                <i class="fas fa-envelope text-primary mr-2"></i>
+                <a href="mailto:hasin.bano@uobs.edu.pk" class="hover:text-primary transition">hasin.bano@uobs.edu.pk</a>
+              </p>
+              <p class="text-sm text-gray-600">
+                <i class="fas fa-phone text-primary mr-2"></i>
+                <a href="tel:+923448830990" class="hover:text-primary transition">+92 344 8830990</a>
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t">
+              <span class="inline-block bg-green-100 text-green-800 text-xs font-semibold px-3 py-1 rounded-full">
+                Selected for Inspection
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl font-bold text-center text-gray-900 mb-4">Get In Touch</h2>
+        <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+          I'm always open to discussing new opportunities, collaborations, or projects. Feel free to reach out!
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-2xl font-semibold text-gray-900 mb-6">Contact Information</h3>
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                  <a href="mailto:akhtar.abbas8267@gmail.com" class="text-gray-600 hover:text-primary transition">
+                    akhtar.abbas8267@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                  <a href="tel:+923400673579" class="text-gray-600 hover:text-primary transition">
+                    +92 340 0673579
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center text-white mr-4">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
+                  <p class="text-gray-600">Islamabad, Pakistan</p>
+                  <p class="text-sm text-gray-500">Willing to relocate/</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-8 pt-8 border-t">
+              <h4 class="font-semibold text-gray-900 mb-4">Connect on Social Media</h4>
+              <div class="flex gap-4">
+                <a href="https://github.com/Akhtar-Abas" target="_blank" class="w-12 h-12 bg-gray-900 rounded-lg flex items-center justify-center text-white hover:bg-gray-800 transition transform hover:scale-110">
+                  <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/akhtar-abbas-163616241" target="_blank" class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white hover:bg-blue-700 transition transform hover:scale-110">
+                  <i class="fab fa-linkedin text-xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div>
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Your Name</label>
+                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="Akhtar Abbas">
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-semibold text-gray-900 mb-2">Your Email</label>
+                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="akhtar.abbas8267@gmail.com">
+              </div>
+
+              <div>
+                <label for="subject" class="block text-sm font-semibold text-gray-900 mb-2">Subject</label>
+                <input type="text" id="subject" name="subject" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="Project Inquiry">
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-semibold text-gray-900 mb-2">Message</label>
+                <textarea id="message" name="message" required rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition" placeholder="Tell me about your project..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-secondary transition transform hover:scale-105 shadow-lg">
+                Send Message
+              </button>
+
+              <div id="form-message" class="hidden"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-gray-400 mb-4">
+            &copy; 2026 Akhtar Abbas. All rights reserved.
+          </p>
+          <p class="text-gray-500 text-sm">
+          
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-secondary transition transform hover:scale-110 hidden z-40">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
